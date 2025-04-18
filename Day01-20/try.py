@@ -99,9 +99,36 @@
 # a, *b, c = 'hello'
 # print(a, b, c)
 
-s1 = '\it \is \time \to \read \now'
-s2 = r'\it \is \time \to \read \now'
-print(f's1={s1}')
-print(f's2={s2}')
+# s1 = '\it \is \time \to \read \now'
+# s2 = r'\it \is \time \to \read \now'
+# print(f's1={s1}')
+# print(f's2={s2}')
 
+# xinhua = {
+#     '麓': '山脚下',
+#     '路': '道，往来通行的地方；方面，地区：南～货，外～货；种类：他俩是一～人',
+#     '蕗': '甘草的别名',
+#     '潞': '潞水，水名，即今山西省的浊漳河；潞江，水名，即云南省的怒江'
+# }
+# print(xinhua)
+# person = {
+#     'name': '王大锤',
+#     'age': 55,
+#     'height': 168,
+#     'weight': 60,
+#     'addr': '成都市武侯区科华北路62号1栋101', 
+#     'tel': '13122334455',
+#     'emergence contact': '13800998877'
+# }
+# print(person)
 
+def fac(num):
+    result = 1
+    for n in range(1, num + 1):
+        result *= n
+    return result
+m = int(input('m = '))
+n = int(input('n = '))
+# 计算阶乘的时候不需要写重复的代码而是直接调用函数
+# 调用函数的语法是在函数名后面跟上圆括号并传入参数
+print(fac(m) // fac(n) // fac(m - n))
